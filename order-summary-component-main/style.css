@@ -1,0 +1,133 @@
+:root {
+    --pale-blue: #e0e8ff;
+    --bright-blue: #3829e0;
+    --very-pale-blue: #f5f7ff;
+    --desatured-blue: #7280a7;
+    --dark-blue: #1f2f56;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-color: var(--pale-blue);
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.general img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img-next {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto p {
+    color: var(--desatured-blue);
+}
+
+.plan {
+    display: flex;
+    background-color: var(--very-pale-blue);
+    width: 100%;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.titulo h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.texto {
+    text-align: center;
+}
+
+.texto-plan p {
+    margin: 0;
+    padding: 0;
+}
+
+.plan a {
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+#uno {
+    font-weight: 900;
+}
+
+#dos {
+    color: var(--desatured-blue);
+}
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 32px 71px -41px rgba(56,41,224,1);
+}
+
+button:hover{
+    filter:brightness(2);
+    color: var(--very-pale-blue);
+}
+
+p a {
+    font-weight: 700;
+    color: var(--desatured-blue);
+}
+
+p a:hover {
+    text-decoration: none;
+    color: var();
+    filter: brightness(2);
+}
+
+#cancel {
+    text-decoration: none;
+}
+
+#cancel:hover{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+@media (max-width: 470px) {
+    body{
+        background-image: none;
+        background-color: var(--pale-blue);
+    }
+    .general{
+        width: 320px;
+    }
+
+    .imagen img{
+        width: 100%;
+    }
+}
+
